@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; font-src 'self'; img-src 'self' data:; connect-src https://script.google.com https://script.googleusercontent.com; form-action 'none'; object-src 'none'; base-uri 'self'" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+    <title>AskiMate — coming soon</title>
+    <meta name="description" content="AskiMate is an AI companion that guides international students through university applications and fills them in, with every detail confirmed by you. Join the waiting list." />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://askimate.com/" />
+    <meta property="og:url" content="https://askimate.com/" />
+    <meta property="og:title" content="AskiMate — coming soon" />
+    <meta property="og:description" content="AskiMate is an AI companion that guides international students through university applications and fills them in, with every detail confirmed by you. Join the waiting list." />
+    <meta property="og:image" content="https://askimate.com/og-image.png" />
+    <meta name="twitter:image" content="https://askimate.com/og-image.png" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="AskiMate" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="AskiMate logo in purple and orange" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="AskiMate — coming soon" />
+    <meta name="twitter:description" content="AskiMate is an AI companion that guides international students through university applications and fills them in, with every detail confirmed by you. Join the waiting list." />
+    <link rel="preload" href="/fonts/figtree.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="icon" type="image/png" sizes="64x64" href="/favicon.png" />
+    <link rel="stylesheet" href="/style.css" />
+    <script src="/app.js" defer></script>
+  </head>
+  <body>
+    <div class="page">
+      <main class="main">
+        <img class="logo" src="/askimate-logo.svg" width="1008" height="239" alt="AskiMate" />
+        <p class="lede">
+          AskiMate is an AI companion that guides international students through every step of applying to university. It fills in your applications for you, and you confirm every detail before anything is sent.
+        </p>
+        <div class="countdown" role="timer" aria-label="Time until launch on 1 March 2027">
+          <h1 class="label">Launching 1 March 2027 · 00:00 UTC</h1>
+          <div class="cells">
+            <div class="cell"><span class="num" id="d" data-testid="text-days">--</span><span class="unit">Days</span></div>
+            <div class="cell"><span class="num" id="h" data-testid="text-hours">--</span><span class="unit">Hours</span></div>
+            <div class="cell"><span class="num" id="m" data-testid="text-minutes">--</span><span class="unit">Minutes</span></div>
+            <div class="cell"><span class="num" id="s" data-testid="text-seconds">--</span><span class="unit">Seconds</span></div>
+          </div>
+        </div>
+        <p class="soon">We’re adding new features and will be back soon.</p>
+        <div id="waitlist">
+          <form class="signup" id="signup" novalidate>
+            <div class="form">
+              <label class="sr" for="email">Email address</label>
+              <input id="email" class="field" type="email" name="email" required maxlength="254" autocomplete="email" placeholder="Your email address" aria-describedby="email-msg" data-testid="input-email" />
+              <input class="sr" type="text" name="website" id="website" tabindex="-1" autocomplete="off" aria-hidden="true" />
+              <button class="btn" type="submit" data-testid="button-join">Join waitlist</button>
+            </div>
+            <p id="email-msg" class="msg" data-testid="text-form-message"></p>
+          </form>
+        </div>
+      </main>
+      <footer class="foot">
+        <a class="mail" href="mailto:hello@askimate.com" data-testid="link-email">hello@askimate.com</a>
+      </footer>
+    </div>
+  </body>
+</html>
